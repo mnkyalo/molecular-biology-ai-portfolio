@@ -13,6 +13,20 @@ Agarose gel electrophoresis analysis requires high precision to distinguish targ
 
 ---
 
+### 🎨 Data Annotation & Taxonomy Setup (CVAT)
+
+Using **CVAT (Computer Vision Annotation Tool)**, an end-to-end multi-class instance segmentation ontology was established for agarose gel electrophoresis analysis.
+
+- **Polygon Masks:** Applied precise polygon contours to isolate distinct `DNA_Band` instances and ladder structures.
+- **Bounding Boxes & Tags:** Segmented empty lanes and controls (`Control/No_Amp`).
+- **Metadata Attributes:** Enriched annotations with functional attributes such as signal intensity (`Intensity: High/Low`).
+
+<p align="center">
+  <img src="./assets/cvat_annotation_workspace.jpg" alt="CVAT Annotation Workspace" width="850"/>
+</p>
+
+---
+
 ## 🔬 Model Training & Baseline Evaluation
 
 - **Architecture:** YOLOv8 Nano Segmentation (`yolov8n-seg.pt`)
