@@ -2,7 +2,7 @@
 
 This document outlines the standard operating procedure (SOP) for annotating agarose gel electrophoresis images for computer vision instance segmentation and object detection models.
 
-##🏷️ Class Definitions & Geometry Rules
+## 🏷️ Class Definitions & Geometry Rules
 
 | Class ID | Class Name | Geometry Type | Annotation Criteria & Boundary Rules |
 | :---: | :--- | :---: | :--- |
@@ -17,7 +17,7 @@ This document outlines the standard operating procedure (SOP) for annotating aga
 | **8** | `DNA_Smear` | Polygon / Box | Enclose continuous, diffuse vertical streaks indicating degraded DNA, over-loaded samples, or non-specific amplification. |
 
 
-##📐 General Annotation Quality Rules
+## 📐 General Annotation Quality Rules
 
 1. Polygon Tightness: For DNA_Band and Ladder_Band, avoid loose bounding boxes. Polygon vertices must tightly map the fluorescent perimeter of the DNA signal.
 2. Overlapping Features: Smaller sub-features (e.g., Ladder_Band) live inside macro-structures (e.g., DNA_Ladder). Both should be annotated independently to support multi-scale evaluation.
