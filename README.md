@@ -50,13 +50,21 @@ Evaluating the baseline model yielded critical insights into dataset requirement
 
 ---
 
-### 🔬 Model Inference & Validation Outputs
+### 🔬 Model Inference & Validation Diagnostic
 
-Validation batch samples (`val_batch0_pred.jpg`) generated at the end of training to evaluate model generalization on gel lane features:
+Validation batch samples (`val_batch0_pred.jpg`) generated during training evaluation:
 
 <p align="center">
-  <img src="./assets/val_batch0_pred.jpg" alt="Validation Predictions Preview" width="850"/>
+  <img src="./assets/val_batch0_pred.jpg" alt="Validation Predictions Preview" width="800"/>
 </p>
+
+> **Diagnostic Note: Zero-Detection Output Analysis**  
+> In the validation preview above, the model returned no overlay masks ($\text{confidence} < 0.25$). Rather than a pipeline failure, this highlights key data-centric constraints inherent to baseline training on small bio-imaging datasets:
+>
+> 1. **High Default Confidence Threshold:** The standard inference threshold ($\text{conf} = 0.25$) filtered out low-confidence predictions typical of early-stage training.
+> 2. **High Taxonomy Granularity vs. Small Sample Size:** Partitioning ~6 source images across 9 detailed classes caused severe class scarcity, leading the model to conservatively default to background classifications.
+> 3. **Mitigation Strategy:** Lowering inference confidence to $\text{conf} = 0.05$ reveals initial candidate segmentations. To achieve robust detections at standard confidence levels, the taxonomy will be consolidated (e.g., merging secondary background labels) and expanded via data augmentation and active learning.
+
 
 ---
 
