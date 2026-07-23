@@ -34,7 +34,6 @@ Using **CVAT (Computer Vision Annotation Tool)**, an end-to-end multi-class inst
 * **Data Annotation & Processing:** CVAT (Computer Vision Annotation Tool), OpenCV
 * **Hardware & Compute:** NVIDIA Tesla T4 GPU (Google Colab), CUDA 12.8
 
----
 
 ### ⚙️ Training Setup & Configuration
 * **Architecture:** YOLOv8 Nano Instance Segmentation (`yolov8n-seg.pt`)
