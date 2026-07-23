@@ -55,7 +55,7 @@ Evaluating the baseline model yielded critical insights into dataset requirement
 Validation batch samples (`val_batch0_pred.jpg`) generated at the end of training to evaluate model generalization on gel lane features:
 
 <p align="center">
-  <img src="./assets/validation_predictions_preview.jpg" alt="Validation Predictions Preview" width="850"/>
+  <img src="./assets/val_batch0_pred.jpg" alt="Validation Predictions Preview" width="850"/>
 </p>
 
 ---
