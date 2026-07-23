@@ -22,7 +22,7 @@ Using **CVAT (Computer Vision Annotation Tool)**, an end-to-end multi-class inst
 - **Metadata Attributes:** Enriched annotations with functional attributes such as signal intensity (`Intensity: High/Low`).
 
 <p align="center">
-  <img src="./assets/cvat_annotation_workspace.jpg" alt="CVAT Annotation Workspace" width="850"/>
+  <img src="./assets/cvat_annotation_1.png" alt="CVAT Annotation Workspace" width="850"/>
 </p>
 
 ---
