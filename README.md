@@ -1,4 +1,17 @@
-# 🧬 Automated PCR Agarose Gel Instance Segmentation: AI Model Training with CVAT & YOLOv8
+# Automated PCR Agarose Gel Instance Segmentation: AI Model Training with CVAT & YOLOv8 🧬
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/mnkyalo/Automated_PCR_Agarose_Gel_Instance_Segmentation_AI_Model_Training_with_CVAT_YOLOv8)
+[![Format](https://img.shields.io/badge/Data_Format-YOLOv8_PyTorch_Segmentation-blue)](#)
+[![Domain](https://img.shields.io/badge/Domain-Molecular_Biology_%2F_Bioinformatics-green)](#)
+
+
+## Overview
+This repository contains high-precision polygon instance segmentation annotations, schema definitions, and model training workflows for automating **PCR Agarose Gel Band Analysis** using **CVAT** and **YOLOv8-seg**.
+
+### Key Features & Dataset Metadata
+* **Standard Specification:** Custom polygon-based instance segmentation schema exported to **YOLOv8 PyTorch TXT** format for direct model ingestion.
+* **Core Classes:** `DNA_Band`, `Ladder_Marker`, `Wells`, `Gel_Artifact`.
+* **Primary Objective:** Pixel-accurate boundary detection and quantification of molecular target bands to automate gel documentation and automated density analysis.
 
 ## 📌 Project Overview
 Agarose gel electrophoresis analysis requires high precision to distinguish target PCR products, molecular ladders, wells, and degraded non-specific smearing. This project establishes an **end-to-end Computer Vision & Annotation Pipeline** designed to segment, classify, and evaluate molecular features in gel images using CVAT and YOLOv8-Seg.
